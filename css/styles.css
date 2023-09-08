@@ -2240,6 +2240,17 @@ textarea.form-control-lg {
   margin-left: 0;
 }
 
+/* CSS 코드 */
+.resume-section {
+  height: 100vh; /* 화면 높이의 100%만큼 높이를 가집니다. */
+  overflow-y: scroll; /* 화면 내용이 넘칠 경우 스크롤 표시됩니다. */
+} 
+
+
+
+
+
+
 .form-check-input {
   width: 1em;
   height: 1em;
@@ -4194,10 +4205,15 @@ textarea.form-control-lg {
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
+
+
+
 }
 .card > hr {
   margin-right: 0;
   margin-left: 0;
+
+
 }
 .card > .list-group {
   border-top: inherit;
@@ -4347,6 +4363,9 @@ textarea.form-control-lg {
     border-bottom-left-radius: 0;
   }
 }
+
+
+
 
 .accordion {
   --bs-accordion-color: #212529;
