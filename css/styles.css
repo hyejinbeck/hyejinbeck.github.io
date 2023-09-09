@@ -4325,11 +4325,17 @@ textarea.form-control-lg {
 .card-group > .card {
   margin-bottom: var(--bs-card-group-margin);
 }
+
+.section-group {
+  overflow: hidden; /* 스크롤을 숨김 */
+}
+
 @media (min-width: 576px) {
   .card-group {
     display: flex;
     flex-flow: row wrap;
   }
+  
   .card-group > .card {
     flex: 1 0 0%;
     margin-bottom: 0;
