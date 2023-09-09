@@ -7062,7 +7062,7 @@ textarea.form-control-lg {
 
 .d-flex {
   display: flex !important;
-  flex-direction: column; /* Skills Section for Mobile  웹화면구성에는 card의 가로정렬  그리고 모바일화면구성에는 세로정렬 */ 
+  /* flex-direction: column; /* Skills Section for Mobile  웹화면구성에는 card의 가로정렬  그리고 모바일화면구성에는 세로정렬 */ 
 }
 
 .d-inline-flex {
