@@ -143,33 +143,32 @@
                     <h2>skills</h2>
                     <h5 class="mb-5">사용 프로그램과 기술</h5>
                     <div class="row row-cols-1 row-cols-md-3 g-6 d-flex gap-3" style="max-width: 90%;">
-                        <!--max-width 가로 길이 에 맞게 전체 크기 축소 -->
                         <!-- 데이터 엔지니어링 역량 섹션 -->
-                        <div class=" col-12 col-md-6 skills-card" style="flex: 0.85;"> <!--카드섹션 가로폭 조금 줄이기-->
+                        <div class="col-12 col-md-6 skills-card" style="flex: 0.85; max-width: 70%;"> 
                             <div class="card" style="flex: 1;">
                                 <div class="card-header">
                                     데이터 엔지니어링 역량
                                 </div>
                                 <div class="card-body">
                                     <span>
-                                        <a class="text-reset text-decoration-none"><strong><p style="color:black">Data Mart, Data Warehouse</p></strong></a>
-                                        <p class="card-text">데이터 플랫폼, 파이프 라인의 아키텍쳐 구성 및 개발/운영</p>
+                                        <a class="text-reset text-decoration-none"><strong><p style="color:black">Data Warehouse구성</p></strong></a>
+                                        <p class="card-text">데이터 플랫폼,파이프라인 구성 및 개발과 운영</p>
                                     </span>
                                     <hr>
                                     <span>
-                                        <a class="text-reset text-decoration-none"><strong><p style="color:black">Hadoop, Spark</p></strong></a>
+                                        <a class="text-reset text-decoration-none"><strong><p style="color:black">Hadoop,Spark</p></strong></a>
                                         <p class="card-text">빅데이터 인프라 구축 및 운영 설계</p>
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <!-- 데이터 분석 섹션 -->
-                        <div class="col-12 col-md-6 skills-card" style="flex: 1;">
-                            <div class="card" style="flex: 1;">
+                            <!-- 데이터 분석 역량 섹션 -->
+                        <div class="col-12 col-md-6 skills-card" >
+                            <div class="card" >
                                 <div class="card-header">
                                     데이터 분석
                                 </div>
-                                <div class="card-body">
+                                   <div class="card-body">
                                     <span>
                                         <a class="text-reset text-decoration-none"><strong><p style="color:black">SQL</p></strong></a>
                                         <p class="card-text">데이터 수집 및 추출,정제 </p>
@@ -196,23 +195,38 @@
                         </div>
                     </div>
                     <div>
-                        <a class="text-reset text-decoration-none">
-                            <h5>그 외</h5>
-                            <div>
-                                <strong><span style="color: black;">Django</span></strong>         
-                                <span>간단한 웹페이지 및 APP구현을 위한 C-R-U-D 기능 구현 후 </span>
-                                <span><a class="text-reset text-decoration-none" href="#activities"><strong>AWS 웹 배포</strong></a></span>
+                        <h5>그 외</h5>
+                        <hr>
+                        <div class="row">
+                            <div class="col mb-0">
+                                <strong><span style="color: black;">Django</span></strong>
                             </div>
-                        </a>
+                            <div class="col mb-0">
+                                <span><p><strong>APP제작 후 AWS 웹 배포(Ubuntu)</strong></span>
+                            </div>
+                            <div class="col mb-0">
+                                <span><a href="#activities" style="color:black"><i class="fa-solid fa-file-lines"></i></a></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0"/>
              <!-- Projects-->
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2>Projects</h2>
-                    <h5>프로젝트</h5> 
+                    <h5>분석 프로젝트</h5> 
+                    <div>
+                        <small>
+                            <i class="fa-solid fa-user" style="display: inline-block;"></i>
+                            <span style="display: inline-block;"><p style="display: inline;">개인</p></span>
+                            <i class="fa-solid fa-user-group" style="display: inline-block;"></i>
+                            <span style="display: inline-block;"><p style="display: inline;">팀</p></span>
+                            <i class="fa-solid fa-user-slash" style="display: inline-block;"></i>
+                            <span style="display: inline-block;"><p style="display: inline;">그외(사이드,진행중,망함)</p></span>
+                        </small>
+                    </div>
                     <hr class="mb-5">
                     <div class="row row-cols-1 row-cols-md-3 g-6 d-flex gap-3">
                         <div class="card card-img-top cropped-image" style="width: 20rem; ">
@@ -279,7 +293,6 @@
                 </div>
             </section>
             <hr class="m-0" />
-
             <!-- Sample-->
             <section class="resume-section" id="sample">
                 <div class="resume-section-content">
@@ -304,46 +317,66 @@
                 <div class="resume-section-content">
                     <h2>Activities</h2>
                     <h5 class="mb-1">그 외 활동</h5> 
-                    <p>통계 분석 공부 활동, 웹개발 프로젝트 등등 사소한것들 중에 뭐 만든거....메인으로 하기엔 부끄럽지만 그래도 작고 소중한 것들</p>
                     <hr>
-                    <div>
-                        <div class="row row-cols-1 row-cols-md-3 g-6 d-flex gap-3">
-                              <div class="card" style="width: 18rem;">
-                                <div class="card-header bg-transparent border-secondary">Python의 django로 APP만들기</div>
-                                <div class="card-body">
-                                   <h6>오늘의 제안</h6> 
-                                   <p class="card-text">Instagram과 같은 앱 구현</p>
-                                   <ul>
-                                        <li>사진 포스팅</li>
-                                        <li>C-R-U-D 로직</li>
-                                        <li>댓글칸,좋아요 클릭</li>
-                                        <li>프로필페이지/팔로우,팔로잉</li>
-                                        <li>AWS 로 배포</li>
-                                   </ul>
-                                   <a href="#" class="card-link">사이트 링크</a>
-                                </div>
-                              </div>
-                              <div class="card" style="width: 18rem;">
-                                <div class="card-header bg-transparent border-secondary">Python의 django로 APP만들기</div>
-                                <div class="card-body">
-                                   <h6>오늘의 제안</h6> 
-                                   <p class="card-text">Instagram 같은 앱 구현</p>
-                                   <ul>
-                                        <li>사진 포스팅</li>
-                                        <li>C-R-U-D 로직 구현</li>
-                                        <li>댓글칸,좋아요 클릭구현</li>
-                                        <li>프로필페이지로 팔로우,팔로잉</li>
-                                        <li>AWS 로 배포 완료</li>
-                                   </ul>
-                                   <a href="#" class="card-link">사이트 링크</a>
-                                </div>
-                              </div>
+                    <div class="row row-cols-1 row-cols-md-3 g-6 d-flex gap-3">
+
+
+                        <div class="card" style="width: 20rem;">
+                            <div class="card-header bg-transparent border-secondary" style="flex: 1;">
+                              Django로 APP 제작
                             </div>
+                            <p class="card-text">Instagram과 같은 APP 구현 </p>
+                             <ul><p style="color:black">"오늘의 제안"</p>
+                                   <li>C-R-U-D 로직</li>
+                                   <li>사진업로드, 댓글, 좋아요</li>
+                                   <li>마이페이지, 팔로우, 팔로잉</li>
+                             </ul>
+                            <a href="#activities" style="color:black; position: absolute; bottom: 0; right: 0;"><i class="fa-solid fa-house"></i></a>
                         </div>
+
+                        <div class="card" style="width: 20rem;">
+                            <div class="card-header bg-transparent border-secondary" style="flex: 1;">
+                              Django로 APP 제작
+                            </div>
+                            <p class="card-text">Instagram과 같은 APP 구현 </p>
+                             <ul><p style="color:black">"오늘의 제안"</p>
+                                   <li>C-R-U-D 로직</li>
+                                   <li>사진업로드, 댓글, 좋아요</li>
+                                   <li>마이페이지, 팔로우, 팔로잉</li>
+                             </ul>
+                            <a href="#activities" style="color:black; position: absolute; bottom: 0; right: 0;"><i class="fa-solid fa-house"></i></a>
+                        </div>
+
+                        <div class="card" style="width: 20rem;">
+                            <div class="card-header bg-transparent border-secondary" style="flex: 1;">
+                              Django로 APP 제작
+                            </div>
+                            <p class="card-text">Instagram과 같은 APP 구현 </p>
+                             <ul><p style="color:black">"오늘의 제안"</p>
+                                   <li>C-R-U-D 로직</li>
+                                   <li>사진업로드, 댓글, 좋아요</li>
+                                   <li>마이페이지, 팔로우, 팔로잉</li>
+                             </ul>
+                            <a href="#activities" style="color:black; position: absolute; bottom: 0; right: 0;"><i class="fa-solid fa-house"></i></a>
+                        </div>
+
+                        <div class="card" style="width: 20rem;">
+                            <div class="card-header bg-transparent border-secondary" style="flex: 1;">
+                              Django로 APP 제작
+                            </div>
+                            <p class="card-text">Instagram과 같은 APP 구현 </p>
+                             <ul><p style="color:black">"오늘의 제안"</p>
+                                   <li>C-R-U-D 로직</li>
+                                   <li>사진업로드, 댓글, 좋아요</li>
+                                   <li>마이페이지, 팔로우, 팔로잉</li>
+                             </ul>
+                            <a href="#activities" style="color:black; position: absolute; bottom: 0; right: 0;"><i class="fa-solid fa-house"></i></a>
+                        </div>
+                        
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
+            <hr class="m-0"/>
             <!-- Resume-->
             <section class="resume-section" id="resume">
                 <div class="resume-section-content">
