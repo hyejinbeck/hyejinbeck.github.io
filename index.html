@@ -142,9 +142,10 @@
                 <div class="resume-section-content">
                     <h2>skills</h2>
                     <h5 class="mb-5">사용 프로그램과 기술</h5>
-                    <div class="d-flex gap-3 " style="max-width: 90%;">   <!--max-width 가로 길이 에 맞게 전체 크기 축소 -->
+                    <div class="row row-cols-1 row-cols-md-3 g-6 d-flex gap-3" style="max-width: 90%;">
+                        <!--max-width 가로 길이 에 맞게 전체 크기 축소 -->
                         <!-- 데이터 엔지니어링 역량 섹션 -->
-                        <div style="flex: 0.85;"> <!--카드섹션 가로폭 조금 줄이기-->
+                        <div class=" col-12 col-md-6 skills-card" style="flex: 0.85;"> <!--카드섹션 가로폭 조금 줄이기-->
                             <div class="card" style="flex: 1;">
                                 <div class="card-header">
                                     데이터 엔지니어링 역량
@@ -159,23 +160,11 @@
                                         <a class="text-reset text-decoration-none"><strong><p style="color:black">Hadoop, Spark</p></strong></a>
                                         <p class="card-text">빅데이터 인프라 구축 및 운영 설계</p>
                                     </span>
-                                    <hr>
-                                    <span>
-                                        <a class="text-reset text-decoration-none"><strong><p style="color:black">AWS 배포 경험</p></strong></a>
-                                        <p class="card-text">아마존 웹 서비스 온라인 배포 경험 </p>
-                                    </span>
-                                    <hr>
-                                    <span>
-                                        <a class="text-reset text-decoration-none"><strong><p style="color:black">Django</p></strong></a>
-                                        <p class="card-text">파이썬 Django를 이용한 웹 개발 및 웹 크롤링으로 데이터 수집 </p>
-                                    </span>
                                 </div>
                             </div>
-                            <br>
-                            <p>애매한 몇가지는 그냥 여기 칸에 쓰자</p>
                         </div>
                         <!-- 데이터 분석 섹션 -->
-                        <div style="flex: 1;">
+                        <div class="col-12 col-md-6 skills-card" style="flex: 1;">
                             <div class="card" style="flex: 1;">
                                 <div class="card-header">
                                     데이터 분석
@@ -206,10 +195,20 @@
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <a class="text-reset text-decoration-none">
+                            <h5>그 외</h5>
+                            <div>
+                                <strong><span style="color: black;">Django</span></strong>         
+                                <span>간단한 웹페이지 및 APP구현을 위한 C-R-U-D 기능 구현 후 </span>
+                                <span><a class="text-reset text-decoration-none" href="#activities"><strong>AWS 웹 배포</strong></a></span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Projects-->
+             <!-- Projects-->
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2>Projects</h2>
@@ -222,71 +221,73 @@
                             </div>
                             <img src="assets/img/aboutme_1.png" class="card-img-top" alt="..." height="100rem"> 
                             <div class="card-body">
-                              <p class="card-text">상점별 카드 매출 데이터를 이용한 코로나 전후 소비 현황 분석 </p>
+                            <p class="card-text">상점별 카드 매출 데이터를 이용한 코로나 전후 소비 현황 분석 </p>
                                 <i class="fa-solid fa-user" style="position: absolute; bottom: 0; right: 0;"></i>
                             </div>
-                          </div>
-                          <div class="card card-img-top cropped-image" style="width: 20rem; ">
+                        </div>
+                        <div class="card card-img-top cropped-image" style="width: 20rem; ">
                             <div class="card-header bg-transparent border-secondary" >
                                 공공서비스 APP 민원
                             </div>
                             <img src="assets/img/aboutme_2.png" class="card-img-top" alt="..." height="100rem">
                             <div class="card-body">
-                              <p class="card-text">어쩌구저ㄱ쩌구를 통해서 무엇을 추론해 냈습니다. </p>
-                              <i class="fa-solid fa-user" style="position: absolute; bottom: 0; right: 0;"></i>
+                            <p class="card-text">어쩌구저ㄱ쩌구를 통해서 무엇을 추론해 냈습니다. </p>
+                            <i class="fa-solid fa-user" style="position: absolute; bottom: 0; right: 0;"></i>
                             </div>
-                          </div>
-                          <div class="card card-img-top cropped-image" style="width: 20rem; ">
+                        </div>
+                        <div class="card card-img-top cropped-image" style="width: 20rem; ">
                             <div class="card-header bg-transparent border-secondary" >
                                 명절 교통량 증가율
                             </div>
                             <img src="assets/img/aboutme_3.png" class="card-img-top" alt="..." height="100rem">
                             <div class="card-body">
-                              <p class="card-text">어쩌구저ㄱ쩌구를 통해서 무엇을 추론해 냈습니다. </p>
-                              <i class="fa-solid fa-user-group" style="position: absolute; bottom: 0; right: 0;"></i>
+                            <p class="card-text">어쩌구저ㄱ쩌구를 통해서 무엇을 추론해 냈습니다. </p>
+                            <i class="fa-solid fa-user-group" style="position: absolute; bottom: 0; right: 0;"></i>
                             </div>
-                          </div>
-                          <div class="card card-img-top cropped-image" style="width: 20rem; ">
+                        </div>
+                        <div class="card card-img-top cropped-image" style="width: 20rem; ">
                             <div class="card-header bg-transparent border-secondary" >
                                 아이스크림 많이 팔리는 계절은?
                             </div>
                             <img src="assets/img/aboutme_4.png" class="card-img-top" alt="..." height="100rem">
                             <div class="card-body">
-                              <p class="card-text">어쩌구저ㄱ쩌구를 통해서 무엇을 추론해 냈습니다. </p>
-                              <i class="fa-solid fa-user-slash" style="position: absolute; bottom: 0; right: 0;"></i>
+                            <p class="card-text">어쩌구저ㄱ쩌구를 통해서 무엇을 추론해 냈습니다. </p>
+                            <i class="fa-solid fa-user-slash" style="position: absolute; bottom: 0; right: 0;"></i>
                             </div>
-                          </div>
-                          <div class="card card-img-top cropped-image" style="width: 20rem; ">
+                        </div>
+                        <div class="card card-img-top cropped-image" style="width: 20rem; ">
                             <div class="card-header bg-transparent border-secondary" >
                                 대중교통 이용의 추이 
                             </div>
                             <img src="assets/img/aboutme_5.png" class="card-img-top" alt="..." height="100rem">
                             <div class="card-body">
-                              <p class="card-text">어쩌구저ㄱ쩌구를 통해서 무엇을 추론해 냈습니다. </p>
-                              <i class="fa-solid fa-user-slash" style="position: absolute; bottom: 0; right: 0;"></i>
+                            <p class="card-text">어쩌구저ㄱ쩌구를 통해서 무엇을 추론해 냈습니다. </p>
+                            <i class="fa-solid fa-user-slash" style="position: absolute; bottom: 0; right: 0;"></i>
                             </div>
-                          </div>
-                          <div class="card card-img-top cropped-image" style="width: 20rem; ">
+                        </div>
+                        <div class="card card-img-top cropped-image" style="width: 20rem; ">
                             <div class="card-header bg-transparent border-secondary" >
                                 과거,현재와 이혼 상관관계
                             </div>
                             <img src="assets/img/aboutme_6.png" class="card-img-top" alt="..." height="100rem"> 
                             <div class="card-body">
-                              <p class="card-text">어쩌구저ㄱ쩌구를 통해서 무엇을 추론해 냈습니다. </p>
-                              <i class="fa-solid fa-user-group" style="position: absolute; bottom: 0; right: 0;"></i>
+                            <p class="card-text">어쩌구저ㄱ쩌구를 통해서 무엇을 추론해 냈습니다. </p>
+                            <i class="fa-solid fa-user-group" style="position: absolute; bottom: 0; right: 0;"></i>
                             </div>
-                          </div>
                         </div>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
+
             <!-- Sample-->
             <section class="resume-section" id="sample">
                 <div class="resume-section-content">
                     <h3>프로젝트 이름</h3>  
                     <h5>상점별 카드 매출 데이터를 이용한 코로나 전후 소비 현황 분석</h5>  
                     <p> <!--프로젝트 개요 및 진행 배경 : --> 코로나로 인한 매출 하락 지역 및 산업을 파악하고, 이에 대한 정책이 필요하다는 제언을 하고자 진행</p>
+                    <!--분석 목적 / 분석 과정 / 분석 결과 / 개인적인 회고-->
+                    <!--내가 한 역할 / 어떤 성과 및 인사이트가 있었는지 -->
                     <hr>
                     <span>
                         <img src="assets/img/sample1.png" class="img-fluid" alt="..." style="max-width: 85% ;">
