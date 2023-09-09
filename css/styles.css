@@ -4320,26 +4320,14 @@ textarea.form-control-lg {
 }
 
 
-/* skills 웹화면구성 : 한 row의 두개의 card  그리고 모바일화면구성: 두 개의 row, 두개의 card  */
-@media (max-width: 768px) {   
-  .card-group .card {
-    flex: 1 0 100%;
-    margin-bottom: 20px;
-  }
-}
-/* Skills Section for Mobile */
-@media (max-width: 768px) {
-  .d-flex {
-    flex-direction: column;
-  }
-}
-/* skills 웹화면구성 : 한 row의 두개의 card  그리고 모바일화면구성: 두 개의 row, 두개의 card  */
 
 
 @media (min-width: 576px) {
   .card-group {
     display: flex;
     flex-flow: row wrap;
+    flex: 1 0 100%;     /* skills 웹화면구성 : 한 row의 두개의 card  그리고 모바일화면구성: 두 개의 row, 두개의 card  */
+    margin-bottom: 20px;    /* skills 웹화면구성 : 한 row의 두개의 card  그리고 모바일화면구성: 두 개의 row, 두개의 card  */
   }
   
   .card-group > .card {
@@ -7074,6 +7062,7 @@ textarea.form-control-lg {
 
 .d-flex {
   display: flex !important;
+  flex-direction: column; /* Skills Section for Mobile  웹화면구성 : 한 row의 두개의 card  그리고 모바일화면구성: 두 개의 row, 두개의 card*/ 
 }
 
 .d-inline-flex {
