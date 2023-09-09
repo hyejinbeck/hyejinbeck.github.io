@@ -2240,13 +2240,6 @@ textarea.form-control-lg {
   margin-left: 0;
 }
 
-/* CSS 코드 */
-.resume-section {
-  height: 100vh; /* 화면 높이의 100%만큼 높이를 가집니다. */
-  overflow-y: scroll; /* 화면 내용이 넘칠 경우 스크롤 표시됩니다. */
-} 
-
-
 
 
 
@@ -4326,9 +4319,6 @@ textarea.form-control-lg {
   margin-bottom: var(--bs-card-group-margin);
 }
 
-.section-group {
-  overflow: hidden; /* 스크롤을 숨김 */
-}
 
 @media (min-width: 576px) {
   .card-group {
@@ -10995,11 +10985,6 @@ section.resume-section {
   max-width: 75rem;
 }
 
-/* CSS 코드 */
-.resume-section {
-  height: 100vh; /* 화면 높이의 100%만큼 높이를 가집니다. */
-  overflow-y: scroll; /* 화면 내용이 넘칠 경우 스크롤 표시됩니다. */
-}
 
 section.resume-section .resume-section-content {
   width: 100%;
