@@ -2183,6 +2183,14 @@ textarea.form-control-lg {
   overflow: hidden;
 }
 
+.image-container-logo {
+  position: relative;
+  width: auto;
+  height: 100px
+  padding-top: 100%; /* 6:4 비율을 나타냅니다 (4 / 6 * 100%) */
+  overflow: hidden;
+}
+
 .cropped-image {
   position: absolute;
   top: 0;
