@@ -27,7 +27,6 @@
                 <ul class="navbar-nav">
                     <li class="nav-item mb-4"><a class="nav-link js-scroll-trigger" href="#about">"안녕하세요!<br>데이터 기획/분석가<br>백혜진입니다."</a></li>  <!--메인 첫화면 : 나를 가장 처음으로 소개 -->
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>  <!--프로페셔널한 나의 기술 스택-->
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills2">Skills2</a></li>  <!--프로페셔널한 나의 기술 스택-->
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li> <!--성격과 장점을 버무려 친근감있게 소개 -->
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>  <!--메인 프로젝트들 (분석,,시각화,,대쉬보드,,)-->
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#dashboard">Dashboard</a></li>  <!--프로젝트중에 하나 대쉬보드 화면구성 -->
@@ -115,53 +114,81 @@
                 </div>
             </section>
             <hr class="m-0" />
+        
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2>skills</h2>
                     <h5 class="mb-5">사용 프로그램과 기술</h5>
-                    <div class="row row-cols-2 row-cols-md-3 g-6 d-flex gap-3" style="max-width: 90%;">
-                        <!-- 데이터 엔지니어링 역량 섹션 -->
-                        <div class="col-12 col-md-6 skills-card" style="flex: 0.95; max-width: 70%;"> 
-                            <div class="card" style="flex: 1;">
-                                <div class="card-header" >
-                                    데이터 엔지니어링 역량
-                                </div>
-                                <div class="card-body">
-                                    <span>
-                                        <a class="text-reset text-decoration-none"><strong><p style="color:black">Data Warehouse구성</p></strong></a>
-                                        <p class="card-text">데이터 플랫폼,파이프라인 구성 및 개발과 운영</p>
-                                    </span>
-                                    <hr>
-                                    <span>
-                                        <a class="text-reset text-decoration-none"><strong><p style="color:black">Hadoop,Spark</p></strong></a>
-                                        <p class="card-text">빅데이터 인프라 구축 및 운영 설계</p>
-                                    </span>
-                                </div>
-                            </div>
-                            <div>
-                                <span>
-                                    <p>
-                                        안녕하세요
-                                    </p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- 데이터 분석 역량 섹션 -->
-                        <div class="col-12 col-md-6 skills-card" >
-                            <div class="card" >
-                            <div class="card-header">
-                                데이터 분석
+                    <div class="row row-cols-1 row-cols-md-3 g-6 d-flex gap-3">
+                        
+                        <div class="card" style="width: 13rem;" >  <!--skill 카드 하나씩 -->
+                            <div class="card-header text-center text-body-secondary">
+                                <strong>환경 구축 및 수집</strong>
                             </div>
                             <div class="card-body">
                                 <span>
+                                    <a class="text-reset text-decoration-none"><strong><p style="color:black">
+                                        <strong>Hadoop</strong>
+                                    </p></strong></a>
+                                    <p class="card-text">데이터 파이프라인 구축
+                                        <ul>
+                                            <li>Data Mart</li>
+                                            <li>Data Warehouse</li>
+                                        </ul>
+                                    </p>
+                                </span>
+                                <hr>
+                                <span>
+                                    <a class="text-reset text-decoration-none"><strong><p style="color:black">Spark</p></strong></a>
+                                    <p class="card-text">DW구축과 운영
+                                </span>
+                                <hr>
+                            </div>
+                        </div>  <!--skill 카드 하나 끝  --> 
+                        <div class="card" style="width: 13rem;" >  <!--skill 카드 하나씩 -->
+                            <div class="card-header text-center text-body-secondary">
+                                데이터 추출 및 수집
+                            </div>
+                            <div class="card-body">
+                                <span>
+                                    <a class="text-reset text-decoration-none"><strong><p style="color:black">크롤링</p></strong></a>
+                                    <p class="card-text">웹사이트 데이터 수집</p>
+                                </span>
+                                <hr>
+                                <span>
                                     <a class="text-reset text-decoration-none"><strong><p style="color:black">SQL</p></strong></a>
-                                    <p class="card-text">데이터 수집 및 추출,정제 </p>
+                                    <p class="card-text">데이터 수집 및 정제</p>
                                 </span>
                                 <hr>
                                 <span>
                                     <a class="text-reset text-decoration-none"><strong><p style="color:black">Python</p></strong></a>
-                                    <p class="card-text">솔루션 개발 및 모델링</p>
+                                    <p class="card-text">솔루션 개발 및 모델링
+                                        <ul>
+                                            <li>Pandas, Numpy를 통한 분석</li>
+                                            <li>Seaborn, Matplotlib 시각화</li>
+                                        </ul>
+                                    </p>
+                                </span>
+                            </div>
+                        </div>  <!--skill 카드 하나 끝  --> 
+                        <div class="card" style="width: 15rem;" >  <!--skill 카드 하나씩 -->
+                            <div class="card-header text-center text-body-secondary">
+                                데이터 분석
+                            </div>
+                            <div class="card-body">
+                                <span>
+                                    <a class="text-reset text-decoration-none"><strong><p style="color:black">Python</p></strong></a>
+                                    <p class="card-text">솔루션 구상 및 분석</p>
+                                </span>
+                                <hr>
+                                <span>
+                                    <a class="text-reset text-decoration-none"><strong><p style="color:black">Python</p></strong></a>
+                                    <p class="card-text">솔루션 개발 및 모델링
+                                        <ul>
+                                            <li>Pandas, Numpy를 통한 전처리</li>
+                                        </ul>
+                                    </p>
                                 </span>
                                 <hr>
                                 <span>
@@ -171,36 +198,45 @@
                                         <li>Google Analytics</li>
                                         <li>Tableau</li>
                                         <li>Power BI</li>
-                                        <li>Seaborn (Python)</li>
-                                        <li>Matplotlib (Python)</li>
                                     </ul>
                                 </span>
                             </div>
-                        </div>
+                        </div>  <!--skill 카드 하나 끝  --> 
+                        <div class="card" style="width: 15rem;" >  <!--skill 카드 하나씩 -->
+                            <div class="card-header text-center text-body-secondary">
+                                인공지능 
+                            </div>
+                            <div class="card-body">
+                                <span>
+                                    <a class="text-reset text-decoration-none"><strong><p style="color:black">머신런닝</p></strong></a>
+                                    <p class="card-text">사이킥-런</p>
+                                </span>
+                                <hr>
+                                <span>
+                                    <a class="text-reset text-decoration-none"><strong><p style="color:black">딥러닝</p></strong></a>
+                                    <p class="card-text">텐서플로
+                                        <ul>
+                                            <li>Pandas, Numpy를 통한 분석</li>
+                                            <li>Seaborn, Matplotlib 시각화</li>
+                                        </ul>
+                                    </p>
+                                </span>
+                                <hr>
+                                <span>
+                                    <a class="text-reset text-decoration-none"><strong><p style="color:black">시각화 툴</p></strong></a>
+                                    <p class="card-text">대시보드 개발, report 작성</p>
+                                    <ul>
+                                        <li>Google Analytics</li>
+                                        <li>Tableau</li>
+                                        <li>Power BI</li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>  <!--skill 카드 하나 끝  --> 
+
+
+
                     </div>
-                </div>
-            </section>
-            <hr class="m-0"/>
-            <!-- Skills2-->
-            <section class="resume-section" id="skills2">
-                <div class="resume-section-content">
-                    <h2>skills</h2>
-                    <h5 class="mb-5">사용 프로그램과 기술</h5>
-                    <div class="scrollable-section scrollable-section ">
-                        <span>
-                            <img src="./assets/img/skills2.png" width="800" height="400"  />
-                        </span>
-
-
-
-
-
-
-                    </div>
-                        
-
-
-
                 </div>
             </section>
             <hr class="m-0"/>
@@ -212,7 +248,7 @@
     
                     <div class="card-group" style="max-width: 88%; margin: 0 auto;">
                         <div class="card">
-                            <div class="card-header card-title bg-transparent border-secondary">긍정적 성격과 적응력</div>
+                            <div class="card-header card-title bg-transparent border-secondary text-center">긍정적 성격과 적응력</div>
                             <div class="image-container">
                                 <img src="assets/img/sydney.jpg" class="card-img-top card-img-top cropped-image" alt="Sydney Image">
                             </div>
@@ -227,11 +263,11 @@
                                 <li class="list-group-item">한국에서의 패션 회사와 IT 스타트업 근무이력</li>
                             </ul>
                             <div class="card-footer">
-                                <small class="text-body-secondary">Good Communucation Skills </small>
+                                <small class="text-body-secondary text-center">Good Communucation Skills </small>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header bg-transparent border-secondary" >
+                            <div class="card-header bg-transparent border-secondary text-center" >
                                 고객 중심적 문제 인식
                             </div>
                             <div class="image-container">
@@ -248,11 +284,11 @@
                                 <li class="list-group-item">고객 데이터 기반 스토리텔링 능력</li>
                             </ul>
                             <div class="card-footer">
-                                <small class="text-body-secondary">Customer-Focused Problem Solving</small>
+                                <small class="text-body-secondary text-center">Customer-Focused Problem Solving</small>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header bg-transparent border-secondary" >
+                            <div class="card-header bg-transparent border-secondary text-center" >
                                 끈기있는 문제 해결 과정
                             </div>
                             <div class="image-container">
@@ -269,7 +305,7 @@
                                 <li class="list-group-item">창의적이고 효율적인 업무 개선</li>
                             </ul>
                             <div class="card-footer">
-                                <small class="text-body-secondary">Creative and Positive Problem Solver</small>
+                                <small class="text-body-secondary text-center">Creative and Positive Problem Solver</small>
                             </div>
                         </div>
                     </div>
