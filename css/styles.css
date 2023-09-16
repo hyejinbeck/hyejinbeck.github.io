@@ -11018,6 +11018,12 @@ section.resume-section {
   max-width: 75rem;
 }
 
+section.resume-section#skills a{
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px;
+}
+
 
 section.resume-section .resume-section-content {
   width: 100%;
