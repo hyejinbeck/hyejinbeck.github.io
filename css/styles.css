@@ -2199,6 +2199,11 @@ textarea.form-control-lg {
   height: auto;
 }
 
+.left-aligned-list{
+  text-align: left;
+  padding-left: 0.7rem;
+}
+
 
 .form-select:focus {
   border-color: #deae9c;
