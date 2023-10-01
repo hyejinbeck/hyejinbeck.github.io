@@ -11049,28 +11049,33 @@ section.resume-section .resume-section-content {
 }
 
 
-/* 특정 섹션에만 스크롤바를 추가하려면 해당 섹션의 클래스 또는 ID를 사용하여 스타일을 적용합니다. */
-.scrollable-section {
-  overflow-y: scroll; /* 세로 스크롤을 항상 표시 */
-  max-height: 530px; /* 스크롤바가 나타날 최대 높이 설정 (원하는 높이로 조정) */
-  
-}
-
-/* 스크롤바 디자인을 조정할 수 있습니다. */
-.scrollable-section::-webkit-scrollbar {
-  width: 4px; /* 스크롤바 너비 조정 */
-}
-
-.scrollable-section::-webkit-scrollbar-thumb {
-  background-color: #bcbebf; /* 스크롤바 색상 조정 */
-  border-radius: 10px; /* 스크롤바 모서리 둥글게 조정 */
-}
-
-.scrollable-section::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* 스크롤바 호버 상태 색상 조정 */
-}
 
 /* 이미지에 그레이스케일 필터 적용 */
 .grayscale-image {
   filter: grayscale(100%);
+  opacity: 0.5; /* 전체 카드의 투명도를 낮추어 연하게 만듭니다. 1이 완전 불투명, 0이 완전 투명입니다. */
 }
+
+
+/* 특정 섹션에만 스크롤바를 추가하려면 해당 섹션의 클래스 또는 ID를 사용하여 스타일을 적용합니다.
+.scrollable-section {
+  overflow-y: scroll; 세로 스크롤을 항상 표시 
+  max-height: 530px; 스크롤바가 나타날 최대 높이 설정 (원하는 높이로 조정) 
+  
+}
+
+
+스크롤바 디자인을 조정할 수 있습니다. 
+.scrollable-section::-webkit-scrollbar {
+  width: 4px;  스크롤바 너비 조정
+} 
+
+.scrollable-section::-webkit-scrollbar-thumb {
+  background-color: #bcbebf;  스크롤바 색상 조정 
+  border-radius: 10px; 스크롤바 모서리 둥글게 조정 
+}
+
+.scrollable-section::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 스크롤바 호버 상태 색상 조정 
+}
+ */ 
