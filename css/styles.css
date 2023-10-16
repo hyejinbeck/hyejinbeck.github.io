@@ -11053,7 +11053,7 @@ section.resume-section .resume-section-content {
 /* 이미지에 그레이스케일 필터 적용 */
 .grayscale-image {
   filter: grayscale(100%);
-  opacity: 0.5; /* 전체 카드의 투명도를 낮추어 연하게 만듭니다. 1이 완전 불투명, 0이 완전 투명입니다. */
+  opacity: 0.7; /* 전체 카드의 투명도를 낮추어 연하게 만듭니다. 1이 완전 불투명, 0이 완전 투명입니다. */
 }
 
 
