@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 /*!
 * Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2023 Start Bootstrap
@@ -93,7 +94,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -115,7 +116,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
@@ -642,6 +643,7 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
+
 
 @media (min-width: 576px) {
   .container-sm, .container {
@@ -3858,12 +3860,25 @@ textarea.form-control-lg {
   align-items: center;
 }
 
+.wrap-toggler {
+  display: block;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 16px;
+  z-index: 999;
+  background-color: #fff;
+}
+
 .navbar-toggler {
+  float: right;
+  background-color: #fff;
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
   color: var(--bs-navbar-color);
-  background-color: transparent;
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
@@ -3993,6 +4008,11 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 992px) {
+  .wrap-toggler {
+    position: static;
+    padding: 0;
+    margin-bottom: auto
+  }
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -11029,9 +11049,16 @@ section.resume-section {
 }
 
 section.resume-section#skills a{
-  background-color: #000;
-  color: #fff;
   border-radius: 2px;
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #000;
+  padding: 2px 6px 1px;
+  background-color: #fff;
+}
+
+section.resume-section#skills .td-content div {
+ padding: 10px 0 0
 }
 
 
@@ -11039,10 +11066,24 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 
+#resume .resume-section-content a {
+  padding: 1px 6px 2px;
+  border: 2px solid #000;
+  color: #000;
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
   }
+  section.resume-section#skills .td-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  section.resume-section#skills .td-content div {
+    padding: 0 0 0 10px
+   }
 }
 @media (min-width: 992px) {
   section.resume-section {
