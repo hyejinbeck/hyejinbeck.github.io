@@ -11112,4 +11112,6 @@ section.resume-section .resume-section-content {
 .resume_image {
   max-width: 100%; /* 부모 컨테이너의 최대 너비로 설정 */
   height: auto; /* 높이를 자동으로 조절하여 가로세로 비율 유지 */
+  
 }
+
