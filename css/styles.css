@@ -11114,3 +11114,7 @@ section.resume-section .resume-section-content {
   height: auto; /* 높이를 자동으로 조절하여 가로세로 비율 유지 */
   
 }
+
+tr.highlighted {
+  background-color: #f2f2f2; /* 얕은 회색 배경색 */
+}
