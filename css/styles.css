@@ -11135,21 +11135,3 @@ tr.highlighted {
   }
 }
 
-
-@media (min-width: 576px) {
-  .img-fluid {
-      max-width: 12rem;
-      height: auto;
-  }
-}
-
-
-/* 모바일 화면에 대한 스타일 */
-@media only screen and (max-width: 768px) {
-  /* 모바일 화면에서 글자 크기 조절 */
-  .img-fluid {
-    max-width: 10rem;
-    height: auto; /* 높이를 자동으로 조절하여 가로세로 비율 유지 */
-    
-  }
-}
