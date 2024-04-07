@@ -11134,3 +11134,11 @@ tr.highlighted {
       font-size: 20px;
   }
 }
+
+
+@media (min-width: 576px) {
+  .img-fluid {
+      max-width: 12rem;
+      height: auto;
+  }
+}
