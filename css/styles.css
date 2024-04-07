@@ -11118,3 +11118,19 @@ section.resume-section .resume-section-content {
 tr.highlighted {
   background-color: #f2f2f2; /* 얕은 회색 배경색 */
 }
+
+/* 모바일 화면에 대한 스타일 */
+@media only screen and (max-width: 768px) {
+  /* 모바일 화면에서 글자 크기 조절 */
+  .introduce_me {
+      font-size: 16px;
+  }
+}
+
+/* 대형 화면에 대한 스타일 */
+@media only screen and (min-width: 1200px) {
+  /* 대형 화면에서 글자 크기 조절 */
+  .introduce_me {
+      font-size: 20px;
+  }
+}
