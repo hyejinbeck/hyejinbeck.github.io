@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 /*!
 * Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2023 Start Bootstrap
@@ -94,7 +93,7 @@
 
 body {
   margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -116,7 +115,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
@@ -326,6 +325,13 @@ caption {
 th {
   text-align: inherit;
   text-align: -webkit-match-parent;
+}
+
+.cropped-image {
+  height: 15rem; /* 높이를 4rem으로 고정 */
+  width: 100%; /* 가로 크기를 부모 요소에 맞춤 */
+  object-fit: cover; /* 이미지 비율 유지하며 크기 조정 */
+  object-position: top; /* 상단을 기준으로 맞추고 하단에서 잘림 */
 }
 
 thead,
@@ -643,7 +649,6 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
-
 
 @media (min-width: 576px) {
   .container-sm, .container {
@@ -2171,42 +2176,6 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-
-.image-container {
-  position: relative;
-  width: 100%;
-  padding-top: 66.67%; /* 6:4 비율을 나타냅니다 (4 / 6 * 100%) */
-  overflow: hidden;
-}
-
-.image-container-me {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.image-container-logo {
-  position: relative;
-  width: auto;
-  height: 100px
-  padding-top: 100%; /* 6:4 비율을 나타냅니다 (4 / 6 * 100%) */
-  overflow: hidden;
-}
-
-.cropped-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-}
-
-.left-aligned-list{
-  text-align: left;
-  padding-left: 0.7rem;
-}
-
-
 .form-select:focus {
   border-color: #deae9c;
   outline: 0;
@@ -2261,10 +2230,6 @@ textarea.form-control-lg {
   margin-right: -1.5em;
   margin-left: 0;
 }
-
-
-
-
 
 .form-check-input {
   width: 1em;
@@ -3860,25 +3825,12 @@ textarea.form-control-lg {
   align-items: center;
 }
 
-.wrap-toggler {
-  display: block;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 10px 16px;
-  z-index: 999;
-  background-color: #fff;
-}
-
 .navbar-toggler {
-  float: right;
-  background-color: #fff;
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
   color: var(--bs-navbar-color);
+  background-color: transparent;
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
@@ -4008,11 +3960,6 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 992px) {
-  .wrap-toggler {
-    position: static;
-    padding: 0;
-    margin-bottom: auto
-  }
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -4210,16 +4157,6 @@ textarea.form-control-lg {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-
-
-
-
-
-
-
-
-
-
 .card {
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
@@ -4248,15 +4185,10 @@ textarea.form-control-lg {
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
-
-
-
 }
 .card > hr {
   margin-right: 0;
   margin-left: 0;
-
-
 }
 .card > .list-group {
   border-top: inherit;
@@ -4277,15 +4209,10 @@ textarea.form-control-lg {
   border-top: 0;
 }
 
-.card-body ul {
-  margin-bottom: 0; /* RESEARCH 카드안의 내용물 마지막줄과 카드 bottom 빈공간 너무 많아 추가 -- 아래쪽 마진 제거 또는 축소 */
-}
-
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
-  margin-bottom: 0; /* RESEARCH 카드안의 내용물 마지막줄과 카드 bottom 빈공간 너무 많아 추가 -- 아래쪽 마진 제거 또는 축소 */
 }
 
 .card-title {
@@ -4373,18 +4300,11 @@ textarea.form-control-lg {
 .card-group > .card {
   margin-bottom: var(--bs-card-group-margin);
 }
-
-
-
-
 @media (min-width: 576px) {
   .card-group {
     display: flex;
     flex-flow: row wrap;
-    flex: 1 0 100%;     /* skills 웹화면구성 : 한 row의 두개의 card  그리고 모바일화면구성: 두 개의 row, 두개의 card  */
-    margin-bottom: 20px;    /* skills 웹화면구성 : 한 row의 두개의 card  그리고 모바일화면구성: 두 개의 row, 두개의 card  */
   }
-  
   .card-group > .card {
     flex: 1 0 0%;
     margin-bottom: 0;
@@ -4418,9 +4338,6 @@ textarea.form-control-lg {
     border-bottom-left-radius: 0;
   }
 }
-
-
-
 
 .accordion {
   --bs-accordion-color: #212529;
@@ -4896,9 +4813,6 @@ textarea.form-control-lg {
   margin-bottom: 0;
   border-radius: var(--bs-list-group-border-radius);
 }
-
-
-
 
 .list-group-numbered {
   list-style-type: none;
@@ -7120,7 +7034,6 @@ textarea.form-control-lg {
 
 .d-flex {
   display: flex !important;
-  /* flex-direction: column; /* Skills Section for Mobile  웹화면구성에는 card의 가로정렬  그리고 모바일화면구성에는 세로정렬 */ 
 }
 
 .d-inline-flex {
@@ -10974,6 +10887,18 @@ p.lead {
   outline-color: #d48a6e;
 }
 
+.scrollable-section {
+  overflow-x: auto; /* 가로 스크롤 활성화 */
+  white-space: nowrap; /* 이미지들을 가로로 정렬하기 위해 줄 바꿈 금지 */
+}
+
+.scrollable-section img {
+  display: inline-block; /* 이미지를 가로로 정렬 */
+  margin-right: 10px; /* 이미지 사이의 간격 조절 (원하는 만큼 조절) */
+}
+
+
+
 @media (min-width: 992px) {
   #sideNav {
     padding-left: 0;
@@ -11047,43 +10972,14 @@ section.resume-section {
   padding-bottom: 5rem;
   max-width: 75rem;
 }
-
-section.resume-section#skills a{
-  border-radius: 2px;
-  text-decoration: none;
-  color: #000;
-  border: 2px solid #000;
-  padding: 2px 6px 1px;
-  background-color: #fff;
-}
-
-section.resume-section#skills .td-content div {
- padding: 10px 0 0
-}
-
-
 section.resume-section .resume-section-content {
   width: 100%;
-}
-
-#resume .resume-section-content a {
-  padding: 1px 6px 2px;
-  border: 2px solid #000;
-  color: #000;
-  text-decoration: none;
 }
 
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
   }
-  section.resume-section#skills .td-content {
-    display: flex;
-    justify-content: space-between;
-  }
-  section.resume-section#skills .td-content div {
-    padding: 0 0 0 10px
-   }
 }
 @media (min-width: 992px) {
   section.resume-section {
@@ -11093,45 +10989,3 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
-
-.contact-info {
-  text-align: left;
-}
-
-.scrollable-section {
-  overflow-x: auto; /* 가로 스크롤 활성화 */
-  white-space: nowrap; /* 이미지들을 가로로 정렬하기 위해 줄 바꿈 금지 */
-}
-
-.scrollable-section img {
-  display: inline-block; /* 이미지를 가로로 정렬 */
-  margin-right: 10px; /* 이미지 사이의 간격 조절 (원하는 만큼 조절) */
-}
-
-
-.resume_image {
-  max-width: 100%; /* 부모 컨테이너의 최대 너비로 설정 */
-  height: auto; /* 높이를 자동으로 조절하여 가로세로 비율 유지 */
-  
-}
-
-tr.highlighted {
-  background-color: #f2f2f2; /* 얕은 회색 배경색 */
-}
-
-/* 모바일 화면에 대한 스타일 */
-@media only screen and (max-width: 768px) {
-  /* 모바일 화면에서 글자 크기 조절 */
-  .introduce_me {
-      font-size: 16px;
-  }
-}
-
-/* 대형 화면에 대한 스타일 */
-@media only screen and (min-width: 1200px) {
-  /* 대형 화면에서 글자 크기 조절 */
-  .introduce_me {
-      font-size: 20px;
-  }
-}
-

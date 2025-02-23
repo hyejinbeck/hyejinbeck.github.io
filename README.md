@@ -1,2 +1,0 @@
-
-https://hyejinbeck.github.io/ 
